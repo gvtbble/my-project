@@ -33,6 +33,7 @@ html, body {
   background-color: #000;
   position: absolute;
   top: 8px;
+  transition: all 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
 }
 
 .block__title:before {
@@ -43,4 +44,17 @@ html, body {
 .block__title:after {
   transform: rotate(-40deg);
   left: 6px;
+}
+
+.block__title.active:before,
+.block__title.active:after {
+  background-color: rgb(255, 0, 0);
+}
+
+.block__title.active:after {
+  transform: rotate(40deg);
+}
+
+.block__title.active:before {
+  transform: rotate(-40deg);
 }
