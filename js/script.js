@@ -10,10 +10,6 @@ $(document).ready(function() {
 		$('body').toggleClass('lock');
 	});
 });
-for(let n=2;n%1==0 & n%n==0 & n<10;n++){
-	if (n % 2 !==0) continue;
-	alert(n);
-}
 
 
 
@@ -33,9 +29,20 @@ for(let n=2;n%1==0 & n%n==0 & n<10;n++){
 
 
 
-
-
-
+// const number = +prompt('Введите число между 0 и 3', '');
+// switch(number){
+// 	case 0:
+// 		alert('Вы ввели число 0');
+// 		break;
+// 	case 1:
+// 		alert('Вы ввели число 1');
+// 		break;
+// 	case 2:
+// 	case 3:
+// 		alert('Вы ввели число 2, а может и 3');
+// 		break;
+// 	// How work SWITCH
+// }
 // for (let number=prompt("Введите число");number<100;number=prompt("Try it again")){
 // 	if ((number>100)||(number==null)) break;
 // 	//Повторять цикл, пока ввод неверен
