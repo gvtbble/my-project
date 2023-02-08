@@ -11,6 +11,28 @@ $(document).ready(function() {
 	});
 });
 
+function pow(x, n) {
+	let result = x;
+  
+	for (let i = 1; i < n; i++) {
+	  result *= x;
+	}
+  
+	return result;
+  }
+  
+  let x = prompt("x?", '');
+  let n = parseInt(prompt("n?", ''));
+  
+  if (isNaN(n) || n < 1 || !Number.isInteger(n)) {
+	alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+  } else {
+	alert( pow(x, n) );
+  }
+  
+  
+  
+  
 
 
 
@@ -25,10 +47,19 @@ $(document).ready(function() {
 
 
 
-
-
-
-
+	//function min(a,b){
+	// 	if (a>b){
+	// 	return b
+	// 	} else {
+	// 	return a
+	// 	}
+	// } //возвращает меньшее из чисел a и b.
+// function checkAge(age) {
+// 	return (age > 18) ? true:confirm('Родители разрешили?');
+// }
+// function checkAge(age) {
+// 	return (age>18)||confirm('Родители разрешили?');
+// }
 // const number = +prompt('Введите число между 0 и 3', '');
 // switch(number){
 // 	case 0:
