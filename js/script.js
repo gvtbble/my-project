@@ -11,28 +11,31 @@ $(document).ready(function() {
 	});
 });
 
-function pow(x, n) {
-	let result = x;
+// function pow(x, n) {
+// 	let result = x;
   
-	for (let i = 1; i < n; i++) {
-	  result *= x;
-	}
+// 	for (let i = 1; i < n; i++) {
+// 	  result *= x;
+// 	}
   
-	return result;
-  }
+// 	return result;
+//   }
   
-  let x = prompt("x?", '');
-  let n = parseInt(prompt("n?", ''));
+//   let x = prompt("x?", '');
+//   let n = parseInt(prompt("n?", ''));
   
-  if (isNaN(n) || n < 1 || !Number.isInteger(n)) {
-	alert(`Степень ${n} не поддерживается, используйте натуральное число`);
-  } else {
-	alert( pow(x, n) );
-  }
-  
-  
-  
-  
+//   if (isNaN(n) || n < 1 || !Number.isInteger(n)) {
+// 	alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+//   } else {
+// 	alert( pow(x, n) );
+//   }
+let ask=(question, yes, no) => (confirm(question)) ? yes:no ;
+ask(
+	"Вы согласны?",
+    alert("Вы согласились."),
+	alert("Вы отменили выполнение.")
+);
+
 
 
 
