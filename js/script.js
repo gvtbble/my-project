@@ -11,6 +11,19 @@ $(document).ready(function() {
 	});
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function pow(x, n) {
 // 	let result = x;
   
@@ -29,27 +42,12 @@ $(document).ready(function() {
 //   } else {
 // 	alert( pow(x, n) );
 //   }
-let ask=(question, yes, no) => (confirm(question)) ? yes:no ;
-ask(
-	"Вы согласны?",
-    alert("Вы согласились."),
-	alert("Вы отменили выполнение.")
-);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let ask=(question, yes, no) => (confirm(question)) ? yes:no ;
+// ask(
+// 	"Вы согласны?",
+//     alert("Вы согласились."),
+// 	alert("Вы отменили выполнение.")
+// );
 	//function min(a,b){
 	// 	if (a>b){
 	// 	return b
