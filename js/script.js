@@ -24,6 +24,89 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// let ladder = {
+// 	step: 0,
+// 	up() {
+// 		this.step++;
+// 		return this;
+// 	},
+// 	down() {
+// 		this.step--;
+// 		return this
+// 	},
+// 	showStep() { 
+// 		alert( this.step );
+// 		return this
+// 	}
+// };
+// ladder.up().up().down().showStep().down().showStep(); // показывает 1 затем 0
+
+// let calculator = {
+	//// Создайте объект calculator (калькулятор) с тремя методами:
+// 	sum() {
+// 	  return this.a + this.b;
+// 	},
+  
+// 	mul() {
+// 	  return this.a * this.b;
+// 	},
+  
+// 	read() {
+// 	  this.a = +prompt('a?', 0);
+// 	  this.b = +prompt('b?', 0);
+// 	}
+//   };
+  
+//   calculator.read();
+//   alert( calculator.sum() );
+//   alert( calculator.mul() );
+
+// // Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2.
+// function multiplyNumeric(obj) {
+// 	for (let key in obj) {
+// 		if (typeof obj[key] == "number") {
+// 			obj[key] *=2;
+// 		}
+// 	}
+// }
+
+// let salaries = {
+	// 	John: 100,
+	// 	Ann: 160,
+	// 	Pete: 130
+	// }
+	// let sum = 0;
+	// for (let key in salaries) {
+	// 	sum += salaries[key];
+	// }
+	// alert(sum);
+	//   Напишите код для суммирования всех зарплат и сохраните результат в переменной sum. Должно получиться 390.
+	//   Если объект salaries пуст, то результат должен быть 0.
+
+// function isEmpty(obj) {
+// 	for (let key in obj) {
+// 		return false;
+// 	}
+// 	return true;
+// }
+// let schedule = {};
+
+// alert( isEmpty(schedule) ); // true
+
+// schedule["8:30"] = "get up";
+
+// alert( isEmpty(schedule) ); // false
 // function pow(x, n) {
 // 	let result = x;
   
