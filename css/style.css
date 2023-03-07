@@ -1,63 +1,66 @@
-@import url(../css/nullstyle.css);
 html, body {
   height: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .wrapper {
-  min-height: 100%;
-  overflow: hidden;
-}
-
-.container {
-  max-width: 1180px;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
-.header {
-  position: fixed;
-  width: 100%;
-  background-color: aquamarine;
-  height: 80px;
-  z-index: 4;
-}
-.header:before {
-  content: "";
   height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
-.header__body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.block {
+  padding: 50px;
 }
-.header__img {
-  flex: 0 0 60px;
+
+.block__item {
+  margin-bottom: 20px;
+}
+
+.block__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.block__text {
   padding-top: 10px;
-}
-.header__img img {
-  max-width: 100%;
-  display: block;
-  border-radius: 50%;
-}
-.header__burger {
   display: none;
 }
-@media (max-width: 767px) {
-  .header__burger {
-    display: block;
-    height: 20px;
-    width: 30px;
-    position: relative;
-    z-index: 3;
-  }
-  .header__burger span {
-    height: 2px;
-    background-color: black;
+
+.block__title:before,
+.block__title:after {
+  content: "";
+  height: 2px;
+  width: 10px;
+  background-color: #000;
+  position: absolute;
+  top: 8px;
+  transition: all 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+}
+
+.block__title:before {
+  transform: rotate(40deg);
+  left: 0;
+}
+
+.block__title:after {
+  transform: rotate(-40deg);
+  left: 6px;
+}
+
+.block__title.active:before,
+.block__title.active:after {
+  background-color: rgb(255, 0, 0);
+}
+
+.block__title.active:after {
+  transform: rotate(40deg);
+}
+
+.block__title.active:before {
+  transform: rotate(-40deg);
+} black;
     width: 100%;
     position: absolute;
   }

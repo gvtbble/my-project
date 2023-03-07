@@ -35,6 +35,152 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Напишите функцию sumInput(), которая:
+// // Просит пользователя ввести значения, используя prompt и сохраняет их в массив.
+// // Заканчивает запрашивать значения, когда пользователь введёт не числовое значение, пустую строку или нажмёт «Отмена».
+// // Подсчитывает и возвращает сумму элементов массива.
+// // P.S. Ноль 0 – считается числом, не останавливайте ввод значений при вводе «0».
+// function sumInput() {
+	
+// 	let numbers = [];
+
+// 	while(true) {
+
+// 		let value = prompt("enter", 0);
+
+// 		if (value === null || value === "" || !isFinite(value)) break;
+		
+// 		numbers.push(+value);
+// 	}
+
+// 	let sum = 0;
+
+// 	for (let number of numbers) {
+// 		sum += number;
+// 	}
+// 	return sum;
+// } 
+// alert( sumInput() );
+
+
+// function extractCurrencyValue(str) {
+// 	return +str.slice(1);
+// }
+// alert( extractCurrencyValue('$120') === 120 ); // true
+
+//// Создайте функцию truncate(str, maxlength), которая проверяет длину строки str и, если она превосходит maxlength, заменяет конец str на "…", так, чтобы её длина стала равна maxlength.
+// function truncate(str, maxlength) {
+// 	return (str.length > maxlength) ?
+// 	  str.slice(0, maxlength - 1) + '…' : str;
+//   }
+
+// // Напишите функцию checkSpam(str), возвращающую true, если str содержит 'viagra' или 'XXX', а иначе false.
+
+// // Функция должна быть нечувствительна к регистру:
+// function checkSpam(str) {
+// 	let lowerStr = str.toLowerCase();
+  
+// 	return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+//   }
+  
+//   alert( checkSpam('buy ViAgRA now') );
+//   alert( checkSpam('free xxxxx') );
+//   alert( checkSpam("innocent rabbit") );
+
+
+// Напишите функцию ucFirst(str), возвращающую строку str с заглавным первым символом. Например:
+
+// function ucFirst(str) {
+// 	if (!str) return str;
+  
+// 	return str[0].toUpperCase() + str.slice(1);
+//   }
+  
+//   alert( ucFirst("вася") ); // Вася
+
+// function randomInteger(min, max) {
+// 	let rand = min + Math.random() * (max -min +1 );
+// 	return Math.floor(rand);
+// }
+
+// alert(randomInteger(1, 10));
+
+
+//function random(min, max) {
+	// 	return min + Math.random() * (max-min);
+	// }
+	
+	
+	
+	// alert( random(1, 5) );
+
+// function readNumber() {
+// 	let num;
+  
+// 	do {
+// 	  num = prompt("Введите число", 0);
+// 	} while ( !isFinite(num) );
+  
+// 	if (num === null || num === '') return null;
+  
+// 	return +num;
+//   }
+  
+//   alert(`Число: ${readNumber()}`);
+
+// // функцию-конструктор Accumulator(startingValue) суммa всех введённых пользователем значений, с учётом начального значения startingValue.
+// function Accumulator(startingValue) {
+// 	this.value = startingValue;
+
+// 	this.read = function() {
+// 		this.value += +prompt("Значение?");
+		
+// 	}
+// }
+// let accumulator = new Accumulator(1); // начальное значение 1
+// accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+// accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+// alert(accumulator.value); // выведет сумму этих значений
+
+// // Создайте функцию-конструктор Calculator, которая создаёт объекты с тремя методами:
+// function Calculator() {
+
+// 	this.read = function() {
+// 		this.a = +prompt("Etnter A",0);
+// 		this.b = +prompt("enter b",0);
+// 	};
+
+// 	this.sum = function() {
+// 		return this.a + this.b;
+// 	};
+
+// 	this.mul = function() {
+// 		return this.a * this.b;
+// 	};
+// }
+
+// let calculator = new Calculator();
+// calculator.read();
+
+// alert( "Sum=" + calculator.sum() );
+// alert( "Mul=" + calculator.mul() );
+
 // let ladder = {
 // 	step: 0,
 // 	up() {
