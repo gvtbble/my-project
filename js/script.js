@@ -11,71 +11,141 @@ $(document).ready(function() {
 	});
 });
 
-let list = {
-	value: 1,
-	next: {
-	    value: 2,
-	    next: {
-			value: 3,
-			next: {
-				value: 4,
-				next: null
-			}
-		}
-	}
-};
-//   Напишите функцию printList(list), которая выводит элементы списка по одному.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function SeriesSum(n)
+// {
+// 	// let result = ((n == 1) ? n.toFixed(2) : (+SeriesSum(n-1) + 1/(1 + 3 * (n - 1)))).toFixed(2);
+// 	// return parseInt(result).toFixed(2);
+// 	if (n == 1) {
+// 		return n.toFixed(2);
+// 	} else {
+// 		return (+SeriesSum(n-1) + 1/(1 + 3 * (n - 1))).toFixed(2)
+// 	}
+
+// }
+
+// // alert(typeof(SeriesSum(2)))
+
+// alert(SeriesSum(3))
+
+
+// let paperwork = (n, m) => n < 0 || m < 0 ? 0 : n * m
+
+
+// alert(paperwork(5, -5));
+
+// Сравнение значений в массиве
+// function XO(str) {
+// 	let arr = str.split("");
+// 	let x = 0;
+// 	let o = 0;
+// 	let w = 0;
+// 	for (let amount of arr) {
+// 	  if (amount == "x" || amount == "X") {
+// 		x++
+// 	  } else if (amount == "o" || amount ==  "O") {
+// 		o++
+// 	  } else {
+// 		w++
+// 	  }
+// 	};
+// 	return x == o;
+//   }
+
+
+// function DNAtoRNA(dna) {
+// 	var hold = ''
+// 	for(var i =0;i<dna.length;i++) {
+// 	   if(dna[i]=="T") {
+// 		  hold+="U"
+//   }
+//   else{hold+=dna[i]}
+//   }
+//   return hold;
+		
+//   }
+
+
+// function printList(list) {
+	
+// 	let tmp = list;
+// 	while(tmp) {
+// 		alert(tmp.value);
+// 		tmp = tmp.next;
+// 	}
+
+// }
+
+// function printList(list) {
+
+// 	alert(list.value); // выводим текущий элемент
   
-//   Сделайте два варианта решения: используя цикл и через рекурсию.
+// 	if (list.next) {
+// 	  printList(list.next); // делаем то же самое для остальной части списка
+// 	}
   
-//   Как лучше: с рекурсией или без?
+//   }
 
+// let list = {
+// 	value: 1,
+// 	next: {
+// 	    value: 2,
+// 	    next: {
+// 			value: 3,
+// 			next: {
+// 				value: 4,
+// 				next: null
+// 			}
+// 		}
+// 	}
+// };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// printList(list);
 
 
 // // Напишите функцию formatDate(date), форматирующую date по следующему принципу:
