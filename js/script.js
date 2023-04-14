@@ -12,6 +12,16 @@ $(document).ready(function() {
 });
 
 
+function accum(s) {
+	s =  s.toUpperCase().split("")
+	for (let i = 1; i < s.length ; i++) {
+		s[i] = s[i] + s[i];
+	}
+   return s.join("-")
+
+   }
+
+alert(accum("abcd"));
 
 
 
@@ -55,6 +65,39 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function sumTwoSmallestNumbers(numbers) { 
+// 	numbers.sort((a, b) => a - b);
+// 	let sum = numbers[0] + numbers[1];
+// 	return (sum) 
+// }
+
+// alert(sumTwoSmallestNumbers([15, 28, 4, 2, 43]))
 
 
 // function SeriesSum(n)
