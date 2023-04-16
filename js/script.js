@@ -12,16 +12,8 @@ $(document).ready(function() {
 });
 
 
-function accum(s) {
-	s =  s.toUpperCase().split("")
-	for (let i = 1; i < s.length ; i++) {
-		s[i] = s[i] + s[i];
-	}
-   return s.join("-")
 
-   }
 
-alert(accum("abcd"));
 
 
 
@@ -82,13 +74,33 @@ alert(accum("abcd"));
 
 
 
+// function reverseWords(str) {
+// 	str = str.split(' ');
+// 	for (let i = 0; i < str.length ; i ++) {
+// 	  str[i] = str[i].split("").reverse().join("")
+// 	}
+// 	return str.join(' ');
+//   }
 
+//   alert(reverseWords("apple"))
 
+// function invert(array) {
+// 	for (let i = 0; i < array.length ; i++) {
+// 	  array[i] >= 0 ? array[i] = -Math.abs(array[i]) : array[i] = Math.abs(array[i]);
+// 	}
+// 	 return array;
+//   }
 
+//   alert(invert([1,-2,3,4,5]));
 
 
-
-
+// function accum(s) {
+// 	s =  s.toUpperCase().split("")
+// 	for (let i = 1; i < s.length ; i++) {
+// 		s[i] = s[i] + s[i].repeat(i).toLowerCase();
+// 	}
+//    return s.join("-")
+//    }
 
 
 // function sumTwoSmallestNumbers(numbers) { 
