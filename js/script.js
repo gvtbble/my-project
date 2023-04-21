@@ -47,9 +47,15 @@ $(document).ready(function() {
 
 
 
-
-
-
+// function digPow(n, p){
+// 	let funny = n;
+// 	n =  n.toString().split("");
+// 	let summary = 0;
+// 	for (let i = 0; i < n.length; i++) {
+// 	  summary += n[i] ** (p + i )
+// 	};
+// 	 return (summary % funny) ?  -1 : (summary / funny)
+//   }
 
 
 
