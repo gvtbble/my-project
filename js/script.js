@@ -53,25 +53,49 @@ $(document).ready(function() {
 
 
 
+// function solution(string) {
+	// return(string.replace(/([A-Z])/g, ' $1')); break camelCase
+  
+//   }
+
+
+
+// function rentalCarCost(d) {
+// 	return d * 40 - (d >= 7 ? 50 : (d >= 3 ? 20 : 0));
+//   }
+
+// function persistence(num) {
+// 	var times = 0;
+	
+// 	num = num.toString();
+	
+// 	while (num.length > 1) {
+// 	  times++;
+// 	  num = num.split('').map(Number).reduce((a, b) => a * b).toString();
+// 	}
+	
+// 	return times;
+//  }
 
 
 
 
+// function persistence(num) {
+// 	num =  num.toString().split("");
+//    if (num.length == 1) return 0;
+//    for (var i = 1; true; i++) {
+// 	num = num.reduce((item,cur) => item * cur)
+// 	 if (num < 10) break;
+// 	 num =  num.toString().split("");
+//    }
+   
+//    return i;
+//  }
+
+//  alert(persistence(25));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const isSquare = n => Math.sqrt(n) % 1 === 0
 
 
 // function reverseWords(str) {
