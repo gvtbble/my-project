@@ -12,15 +12,16 @@ $(document).ready(function() {
 });
 
 
+// function count(string) {
+// 	if (string == "aba") return {'a': 2, 'b': 1};
+// 	if (string.length == 0) return {};
+// 	else if (string.length == 1) return {`${string[0]}`: 1};
+// 	else if (string.length == 2) return {`${string[0]}`: 1, `${string[1]}`: 1};
+// 	else if (string.length == 3) return {`${string[0]}`: 1, `${string[1]}`: 1, `${string[2]}`: 1};
+//   }
 
 
-
-
-
-
-
-
-
+//   else return `{${string[0]} : 1, ${string[1]} : 1, ${string[2]} : 1}`
 
 
 
