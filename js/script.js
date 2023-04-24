@@ -12,16 +12,6 @@ $(document).ready(function() {
 });
 
 
-// function count(string) {
-// 	if (string == "aba") return {'a': 2, 'b': 1};
-// 	if (string.length == 0) return {};
-// 	else if (string.length == 1) return {`${string[0]}`: 1};
-// 	else if (string.length == 2) return {`${string[0]}`: 1, `${string[1]}`: 1};
-// 	else if (string.length == 3) return {`${string[0]}`: 1, `${string[1]}`: 1, `${string[2]}`: 1};
-//   }
-
-
-//   else return `{${string[0]} : 1, ${string[1]} : 1, ${string[2]} : 1}`
 
 
 
@@ -47,6 +37,36 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function spy(func) {
+//     function wrapper(...args) {
+//       wrapper.calls.push(args);
+//       return func.apply(this,args);
+//     }
+//     wrapper.calls = [];
+//     return wrapper;
+// }
 
 // function digPow(n, p){
 // 	let funny = n;
